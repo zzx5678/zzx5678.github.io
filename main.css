@@ -1,0 +1,22 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: white;
+	box-shadow: 0 0 3px #8a8989;
+	z-index: 20;
+	color : white;
+	background-color: #05203C;
+}
+
+.header_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 110px;
+	padding: 0 16px;
+	position: relative;
+	max-width: 1300px; /* 전체 헤더의 최대 너비 제한 */
+	margin: 0 auto; /* 중앙 정렬 */
+}
