@@ -54,5 +54,10 @@ html {
 .header_bottom > ul > li{
 	margin-bottom: 20px;
 }
+.content_wrapper{
+	width: 70%;
+	height: 100%;
 
-
+	display: flex;
+    align-items: center;
+}

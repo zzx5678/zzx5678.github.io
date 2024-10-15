@@ -29,27 +29,27 @@
   			</div>
 		</div>
 
-
-		<div class="main_content" id="mainContent">
-			
-		</div>
+		<div class="content_wrapper" id="content_wrapper"> 
+		
+		</div>	
 	</div>
 
 	<script>
-		function loadContent(page) {
-			fetch(page)
+		function loadContent(url) {
+			const content_wrapper = document.getElementById('content_wrapper');
+			fetch(url)
 				.then(response => {
 					if (!response.ok) {
-						throw new Error('페이지를 불러오는 중 문제가 발생했습니다.');
+						throw new Error('네트워크 오류 발생: ' + response.statusText);
 					}
 					return response.text();
 				})
 				.then(data => {
-					document.getElementById('mainContent').innerHTML = data;
+					content_wrapper.innerHTML = data;  // 로드된 HTML 내용을 content_wrapper에 삽입
 				})
 				.catch(error => {
-					console.error(error);
-					alert(error.message);
+					console.error('페이지 로드 실패:', error);
+					content_wrapper.innerHTML = '<p>페이지 로드에 실패했습니다. 다시 시도해주세요.</p>';
 				});
 		}
 	</script>
