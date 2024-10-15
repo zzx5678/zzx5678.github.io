@@ -50,7 +50,7 @@
 	width: 30%;
 	height: 100%;
 
-	margin-right: 20px;
+	margin-right: 3%;
 	border: 1px solid rgb(137, 18, 173);
 }
 .profile_left_main > p{
@@ -73,11 +73,24 @@
 }
 
 .profile_right_main{
-	width: 70%;
+	width: 67%;
 	height: 100%;
 	border: 1px solid rgb(42, 177, 37);
 }
 
+.profile_education_title{
+	font-size: 20px;
+	font-weight: bold;
+	margin: 10px 0px;
+	border-bottom: 2px solid black;
+}
+.profile_education_text{
+	font-size: 12px;        /* 글자 크기 30px */
+	margin: 0px 0px 0px 10px; /* 윗 오른 아래 왼*/
+}
+.gray{
+	color: gray;
+}
 
 .profile_text{
 	border-bottom: 1px solid black;
