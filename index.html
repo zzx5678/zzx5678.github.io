@@ -11,7 +11,7 @@
 	<link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css" rel="stylesheet">
 </head>
 <body>
-	<main class="main">
+	<div class="screen">
 		<div class="header_wrapper">
 			<div class="header">
 				<div class="header_top">
@@ -19,39 +19,39 @@
 				</div>
 				<div class="header_bottom">
 					<ul>
-						<li>화면</li>
-						<li>자기소개</li>
-						<li>2</li>
-						<li>3</li>
-						<li>4</li>
+						<li onclick="loadContent('html/first_page.html')">화면</li>
+						<li onclick="loadContent('html/profile.html')">자기소개</li>
+						<li onclick="loadContent('page2.html')">2</li>
+						<li onclick="loadContent('page3.html')">3</li>
+						<li onclick="loadContent('page4.html')">4</li>
 					</ul>
 				</div>
   			</div>
 		</div>
 
 
-		<div class="first_page_wrapper">
-			<div class="first_page">
-				<div class="first_page_title">
-					PORT-FOLIO
-				</div>
-				<div class="first_page_mini_title">
-					신입 개발자 김정호입니다.
-				</div>
-				<div class="first_page_bottom">
-					<p class="first_page_bottom_p">- contact -</p>
-					<div class="contact_item">
-						<img class="first_page_bottom_img" src="img/phone.png">010-5652-2318
-					</div>
-					<div class="contact_item">
-						<img class="first_page_bottom_img" src="img/email.png">zzx5678@naver.com
-					</div>
-				</div>
-				
-			</div>
+		<div class="main_content" id="mainContent">
+			
 		</div>
-	</main>
+	</div>
 
-
+	<script>
+		function loadContent(page) {
+			fetch(page)
+				.then(response => {
+					if (!response.ok) {
+						throw new Error('페이지를 불러오는 중 문제가 발생했습니다.');
+					}
+					return response.text();
+				})
+				.then(data => {
+					document.getElementById('mainContent').innerHTML = data;
+				})
+				.catch(error => {
+					console.error(error);
+					alert(error.message);
+				});
+		}
+	</script>
 </body>
 </html>
