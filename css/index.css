@@ -17,7 +17,7 @@ html {
 }
 
 .header_wrapper {
-	width: 30%;
+	width: 25%;
 	height: 100%;
 
 }
@@ -60,4 +60,25 @@ html {
 
 	display: flex;
     align-items: center;
+}
+.blank{
+	width: 5%;
+	height: 100%;
+}
+
+.left_arrow{
+
+}
+.left_arrow_img{
+	width: 30px;
+	height: 45px;
+	transform: scaleX(-1); 
+}
+.right_arrow{
+
+}
+.right_arrow_img{
+	width: 30px;
+	height: 45px;
+
 }
