@@ -1,10 +1,4 @@
-.exFinder_wrapper {
-	width: 70%;
-	height: 100%;
 
-	display: flex;
-    align-items: center;
-}
 
 body {
     transition: transform 0.5s ease-in-out;

@@ -1,10 +1,4 @@
-.shopping_wrapper {
-	width: 70%;
-	height: 100%;
 
-	display: flex;
-    align-items: center;
-}
 .shopping{
     display: flex;
     flex-direction: column;

@@ -54,6 +54,8 @@ html {
 .header_bottom > ul > li{
 	margin-bottom: 20px;
 }
+
+/* 중요 각 페이지가 업로든 되는 스타일 */
 .content_wrapper{
 	width: 70%;
 	height: 100%;
@@ -70,15 +72,17 @@ html {
 
 }
 .left_arrow_img{
-	width: 30px;
-	height: 45px;
-	transform: scaleX(-1); 
+	width: 45px;
+	height: 30px;
+	
+	transform: rotate(270deg);
 }
 .right_arrow{
 
 }
 .right_arrow_img{
-	width: 30px;
-	height: 45px;
+	width: 45px;
+	height: 30px;
+	transform: rotate(90deg);
 
 }

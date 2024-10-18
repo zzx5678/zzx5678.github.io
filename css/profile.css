@@ -1,10 +1,4 @@
-.profile_wrapper {
-	width: 70%;
-	height: 100%;
 
-	display: flex;
-    align-items: center;
-}
 .profile{
 	display: flex;
     flex-direction: column;
@@ -71,6 +65,16 @@
     background: linear-gradient(white, white) padding-box, /* 내부 배경 */
                 linear-gradient(40deg, #8EC5FC 16%, #E0C3FC 82%) border-box; /* 테두리 그라데이션 */
 }
+.profile_text{
+	padding-bottom: 5px;
+	border-bottom: 1px solid black;
+	margin-bottom: 5px;
+}
+.profile_icon{
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+}
 
 .profile_right_main{
 	width: 67%;
@@ -84,6 +88,10 @@
 	margin: 10px 0px;
 	border-bottom: 2px solid black;
 }
+.profile_education_title_i{
+	font-size: 12px;
+	font-weight: bold;
+}
 .profile_education_text{
 	font-size: 12px;        /* 글자 크기 30px */
 	margin: 0px 0px 0px 10px; /* 윗 오른 아래 왼*/
@@ -92,9 +100,7 @@
 	color: gray;
 }
 
-.profile_text{
-	border-bottom: 1px solid black;
-}
+
 .profile_skil_p{
 	font-size: 20px;        /* 글자 크기 30px */
     font-weight: bold;
