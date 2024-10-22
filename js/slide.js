@@ -1,7 +1,7 @@
 // 슬라이드 초기화 함수
 function initializeSlide() {
     let currentIndex = 0; // 현재 이미지 인덱스
-    const totalImages = 5; // 총 이미지 수
+    const totalImages = 6; // 총 이미지 수
     let slideInterval; // 슬라이드의 인터벌 ID
     let isRunning = true; // 슬라이드 동작 여부 상태
 
@@ -17,14 +17,21 @@ function initializeSlide() {
         updateIndicators(); // 초기 인디케이터 상태 업데이트
     }
 
-    // 인디케이터 상태 업데이트 함수
+    // 인디케이터 상태 업데이트 함수    
     function updateIndicators() {
         const indicators = document.querySelectorAll('.indicator');
         indicators.forEach((indicator, index) => {
             if (index === currentIndex) {
-                indicator.classList.add('active'); // 활성화된 인디케이터
+                if (isRunning) {
+                    indicator.classList.add('active'); // 슬라이드가 움직일 때 활성화된 인디케이터
+                    indicator.classList.remove('stopped'); // 멈춘 상태가 아니므로 stopped 클래스 제거
+                } else {
+                    indicator.classList.remove('active'); // 슬라이드가 멈추면 활성화된 인디케이터 제거
+                    indicator.classList.add('stopped'); // 현재 슬라이드 인디케이터를 빨간색으로 설정
+                }
             } else {
                 indicator.classList.remove('active'); // 비활성화된 인디케이터
+                indicator.classList.remove('stopped'); // 나머지 인디케이터에서 stopped 클래스 제거
             }
         });
     }
@@ -49,19 +56,26 @@ function initializeSlide() {
             container.style.transform = `translateX(-${currentIndex * slideWidth}px)`; // 슬라이드 이동
         } else {
             console.error("exFinderRightContainer를 찾을 수 없습니다.");
+            // 오류가 발생하면 초기화
+            currentIndex = 0; // 인덱스를 초기화
+            updateSlide(); // 슬라이드를 업데이트
         }
     }
 
     function startSlide() {
-        slideInterval = setInterval(nextSlide, 3000);
-        console.log("슬라이드가 시작되었습니다.");
-        isRunning = true;
+        if (!isRunning) { // 슬라이드가 실행 중이 아닐 때만 시작
+            slideInterval = setInterval(nextSlide, 3000);
+            console.log("슬라이드가 시작되었습니다.");
+            isRunning = true;
+            updateIndicators();
+        }
     }
 
     function stopSlide() {
         clearInterval(slideInterval);
         console.log("슬라이드가 멈췄습니다.");
         isRunning = false;
+        updateIndicators();
     }
 
     function toggleSlide() {

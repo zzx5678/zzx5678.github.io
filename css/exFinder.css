@@ -98,6 +98,11 @@ body {
 	font-size: 18px;    /* 글자 크기 18px */
 	margin-bottom: 10px;
 }
+.exFinder_mini_text2{
+	text-align: left; /* 텍스트를 중앙 정렬 */
+	font-size: 16px;    /* 글자 크기 18px */
+	margin-bottom: 10px;
+}
 
 
 .exFinder_right_main{
@@ -153,10 +158,13 @@ body {
 .indicator.active {
     background-color: #000; /* 활성화된 인디케이터 색상 */
 }
+.indicator.stopped {
+    background-color: red; /* 슬라이드 멈출 때 색상: 빨간색 */
+}
 
 .exFinder_quadrangle{
-
-	border: 2px solid transparent; /* 투명 테두리로 공간을 만듦 */
+	padding: 5px;
+	border: 3px solid transparent; /* 투명 테두리로 공간을 만듦 */
     border-radius: 20px; /* 모서리를 둥글게 설정 */
     background: linear-gradient(white, white) padding-box, /* 내부 배경 */
                 linear-gradient(40deg, #8EC5FC 16%, #E0C3FC 82%) border-box; /* 테두리 그라데이션 */
