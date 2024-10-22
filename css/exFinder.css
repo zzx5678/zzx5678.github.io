@@ -10,11 +10,11 @@ body {
 	justify-content: center; /* 수평 중앙 정렬 */
 	overflow: hidden;
 
-    height: 700px;
-    width: 1200px;
+    height: 800px;
+    width: 1400px;
     margin: 0 auto;
 	padding: 30px;
-    border: 6px solid transparent; /* 투명 테두리로 공간을 만듦 */
+    border: 8px solid transparent; /* 투명 테두리로 공간을 만듦 */
     border-radius: 20px; /* 모서리를 둥글게 설정 */
     background: linear-gradient(white, white) padding-box, /* 내부 배경 */
                 linear-gradient(40deg, #8EC5FC 16%, #E0C3FC 82%) border-box; /* 테두리 그라데이션 */
@@ -26,7 +26,7 @@ body {
 	height: 60px;
 	border: 1px solid red;
 
-	font-size: 40px;        /* 글자 크기 40px */
+	font-size: 50px;        /* 글자 크기 40px */
     font-weight: bold;      /* 글자 굵게 */
 
 	display: flex;          /* flexbox 레이아웃 사용 */
@@ -49,14 +49,14 @@ body {
 
 .exFinder_left_main{
 	width: 32%;
-	height: 536px;
+	height: 604px;
 	margin-right: 3%;
 	border: 1px solid rgb(137, 18, 173);
 }
 
 .exFinder_Logo{
-	width: 286px;
-	height: 84px;
+	width: 300px;
+	height: 100px;
 	margin: 0 auto;
 }
 .exFinder_Logo_img{
@@ -65,7 +65,7 @@ body {
 }
 .exFinder_Logo_title {
     text-align: center; /* 텍스트를 중앙 정렬 */
-    font-size: 20px;    /* 글자 크기 20px */
+    font-size: 24px;    /* 글자 크기 20px */
     font-weight: bold;  /* 글자 굵게 */
 
 	padding-bottom: 5px;
@@ -73,7 +73,7 @@ body {
 	margin-bottom: 5px;
 }
 .exFinder_Logo_text {
-	font-size: 14px;
+	font-size: 16px;
 	padding: 10px;
 	line-height: 1.6;
 }
@@ -82,26 +82,27 @@ body {
 	font-style: normal;
 }
 .exFinder_Logo_text_i{
-	font-size: 12px;
+	font-size: 14px;
 	
 	color: gray;
 }
 .exFinder_mini_title{
 	text-align: center; /* 텍스트를 중앙 정렬 */
-    font-size: 18px;    /* 글자 크기 18px */
+    font-size: 24px;    /* 글자 크기 18px */
     font-weight: bold;  /* 글자 굵게 */
 
 	margin-bottom: 5px;
 }
 .exFinder_mini_text{
 	text-align: center; /* 텍스트를 중앙 정렬 */
+	font-size: 18px;    /* 글자 크기 18px */
 	margin-bottom: 10px;
 }
 
 
 .exFinder_right_main{
 	width: 65%;
-	height: 536px;
+	height: 604px;
 	border: 1px solid rgb(42, 177, 37);
 	
 }
@@ -116,7 +117,7 @@ body {
 	overflow: hidden;
 
 	width: 100%;
-	height: 500px;
+	height: 570px;
 
 	position: relative; /* 상대 위치 설정 */
 }
@@ -131,7 +132,7 @@ body {
 
 .exFinder_reason_img_slide {
 	width: 100%; /* 이미지 너비 설정 */
-	height: 500px; /* 이미지 높이 설정 */
+	height: 570px; /* 이미지 높이 설정 */
 	flex-shrink: 0; /* 이미지가 줄어들지 않도록 설정 */
 	cursor: pointer;
 }
@@ -139,11 +140,11 @@ body {
 .slide-indicators {
     display: flex;
     justify-content: center;
-    margin-top: 10px; /* 슬라이드와의 간격 */
+    margin-top: 16px; /* 슬라이드와의 간격 */
 }
 .indicator {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background-color: #ccc; /* 기본 색상 */
     margin: 0 5px; /* 간격 */
@@ -151,4 +152,15 @@ body {
 }
 .indicator.active {
     background-color: #000; /* 활성화된 인디케이터 색상 */
+}
+.indicator.stopped {
+    background-color: red; /* 슬라이드 멈출 때 색상: 빨간색 */
+}
+
+.exFinder_quadrangle{
+
+	border: 2px solid transparent; /* 투명 테두리로 공간을 만듦 */
+    border-radius: 20px; /* 모서리를 둥글게 설정 */
+    background: linear-gradient(white, white) padding-box, /* 내부 배경 */
+                linear-gradient(40deg, #8EC5FC 16%, #E0C3FC 82%) border-box; /* 테두리 그라데이션 */
 }

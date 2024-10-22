@@ -4,21 +4,21 @@
     flex-direction: column;
 	justify-content: center; /* 수평 중앙 정렬 */
 
-    height: 700px;
-    width: 1200px;
+    height: 800px;
+    width: 1400px;
     margin: 0 auto;
 	padding: 30px;
-    border: 6px solid transparent; /* 투명 테두리로 공간을 만듦 */
+    border: 8px solid transparent; /* 투명 테두리로 공간을 만듦 */
     border-radius: 20px; /* 모서리를 둥글게 설정 */
     background: linear-gradient(#f7f7f7,#f7f7f7) padding-box, /* 내부 배경 */
                 linear-gradient(40deg, #8EC5FC 16%, #E0C3FC 82%) border-box; /* 테두리 그라데이션 */
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
 }
 .first_page_title{
-	width: 650px;
-	height: 120px;
+	width: 800px;
+	height: 150px;
 
-	font-size: 100px;        /* 글자 크기 30px */
+	font-size: 120px;        /* 글자 크기 30px */
     font-weight: bold;
 
 	display: flex;          /* flexbox 레이아웃 사용 */
@@ -38,6 +38,7 @@
     color: transparent; /* 텍스트 색상을 투명하게 설정 */
 }
 .first_page_mini_title{
+	font-size: 24px;
 	font-weight: bold;      /* 글자 굵게 */
 
 	display: flex;          /* flexbox 레이아웃 사용 */
@@ -53,10 +54,11 @@
 	margin-top: auto;
 }
 .first_page_bottom_p{
-	font-size: 20px;
+	font-size: 24px;
 	font-weight: bold;
 }
 .contact_item{
+	font-size: 20px;
 	display: flex;           /* 이미지와 텍스트를 가로 정렬 */
     align-items: center;     /* 수직 중앙 정렬 */
     gap: 10px;  
@@ -64,6 +66,6 @@
 	margin-left: 10px;
 }
 .first_page_bottom_icon{
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
 }

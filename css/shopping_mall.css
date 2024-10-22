@@ -5,11 +5,11 @@
 	justify-content: center; /* 수평 중앙 정렬 */
 	overflow: hidden;
 	
-    height: 700px;
-    width: 1200px;
+    height: 800px;
+    width: 1400px;
     margin: 0 auto;
 	padding: 30px;
-    border: 6px solid transparent; /* 투명 테두리로 공간을 만듦 */
+    border: 8px solid transparent; /* 투명 테두리로 공간을 만듦 */
     border-radius: 20px; /* 모서리를 둥글게 설정 */
     background: linear-gradient(white, white) padding-box, /* 내부 배경 */
                 linear-gradient(40deg, #8EC5FC 16%, #E0C3FC 82%) border-box; /* 테두리 그라데이션 */
