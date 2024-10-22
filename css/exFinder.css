@@ -153,9 +153,6 @@ body {
 .indicator.active {
     background-color: #000; /* 활성화된 인디케이터 색상 */
 }
-.indicator.stopped {
-    background-color: red; /* 슬라이드 멈출 때 색상: 빨간색 */
-}
 
 .exFinder_quadrangle{
 

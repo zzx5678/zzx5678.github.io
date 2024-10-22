@@ -67,9 +67,9 @@ function initializeSlide() {
     function toggleSlide() {
         console.log("슬라이드 클릭 이벤트가 발생했습니다."); // 디버깅용 로그
         if (isRunning) {
-            stopSlide();
+            stopSlide(); // 슬라이드를 멈춥니다.
         } else {
-            startSlide();
+            startSlide(); // 슬라이드를 다시 시작합니다.
         }
     }
 
