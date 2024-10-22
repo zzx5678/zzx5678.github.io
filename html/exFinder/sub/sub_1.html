@@ -5,10 +5,54 @@
 </head>
 <body>
     <div class="exFinder_left_sub">
-        exFinder
+        <div class="left_sub_main">
+            <div class="left_sub_main_title">
+                내가 만든 기능
+            </div>
+            <div class="left_sub_main_text">
+                <label class="left_sub_main_text_label">- 국가별 차트 -</label> <br>
+                데이터베이스의 환율 테이블에서 매퍼를 통한 <br>  
+                CRUD 작업으로 가져온 20가지 통화의 데이터를 <br>
+                구글 차트를 활용하여 하루 동안 변동되는 <br> 
+                환율 정보를 시각적인 정보로 볼 수 있게 했으며, <br>
+                슬라이드 효과를 통해 다른 국가의 환율 그래프도 <br>확인할 수 있게 했습니다.<br>
+                국기 혹은 국가 이름, 통화 코드를 클릭하면, <br>
+                클릭한 국가의 상세 페이지로 이동합니다. <br>
+                <i style="margin-left: 10px;">* 웹 스케줄러로 1시간 마다 자동으로 통화 데이터 값이 웹 크롤링 기능을 통해 데이터베이스에 저장된다.</i>
+            </div>
+            <div class="left_sub_main_text">
+                <label class="left_sub_main_text_label">- 세계 환율 변동률 -</label> <br>
+                사이트에서 지원하는 모든 통화의 전일 대비 변동률을 <br>
+                세계 지도를 통해서 한눈에 확인할 수 있게 했으며, <br>
+                특정 대륙을 선택하여 선택한 대륙에 있는 국가들의 <br>정보만을 확인할 수 있습니다.<br>
+                국기 혹은 국가 이름, 통화 코드를 클릭하면, <br>
+                클릭한 국가의 상세 페이지로 이동합니다. <br>
+            </div>
+            
+        </div>
+        <div class="exFinder_introduction_select">
+            <div onclick="exFinder_sub_load('html/exFinder/sub/sub_3.html')" class="left_arrow">
+                <img src="img/left_arrow.png" class="left_arrow_img2">
+            </div>
+            <div class="sub_load_number">1</div>
+            <div onclick="exFinder_sub_load('html/exFinder/sub/sub_2.html')" class="right_arrow">
+                <img src="img/right_arrow.png" class="right_arrow_img2">
+            </div>
+        </div>
     </div>
     <div class="exFinder_right_sub">
-        exFinder
+        <div class="right_sub_main">
+            <div class="right_sub_main_title">
+                메인 페이지
+            </div>
+            <div class="exFinder_img_box">
+                <img src="img/exFinder_img_1.png" class="exFinder_img">
+            </div>
+            <div class="exFinder_link_box">
+                <a target="_blank" class="exFinder_link" href="https://github.com/leewonbin/exFinder/blob/master/Preview.md#%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C---%EB%A9%94%EC%9D%B8%ED%8E%98%EC%9D%B4%EC%A7%80">기능보기</a>
+            </div>
+        </div>
+        
     </div>
 </body>
 </html>

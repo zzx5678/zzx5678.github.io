@@ -27,6 +27,7 @@ function loadContent(url) {
 
 function exFinder_sub_load(url) {
     const content_wrapper = document.getElementById('exFinder_sub_load');
+
     fetch(url)
         .then(response => {
             if (!response.ok) {
@@ -36,7 +37,6 @@ function exFinder_sub_load(url) {
         })
         .then(data => {
             content_wrapper.innerHTML = data;  // 로드된 HTML 내용을 content_wrapper에 삽입
-
         })
         .catch(error => {
             console.error('페이지 로드 실패:', error);
