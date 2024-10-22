@@ -3,14 +3,14 @@
 
 	width: 100%; /* 이미지 너비 설정 */
 	height: 604px;
-	border: 1px solid rgb(167, 6, 41);
+	
 }
 
 .exFinder_left_sub{
 	width: 32%;
 	height: 604px;
 	margin-right: 3%;
-	border: 1px solid rgb(17, 196, 121);
+	
 }
 .left_sub_main{
     width: 100%;
@@ -39,7 +39,7 @@
 	text-align: left; /* 텍스트를 중앙 정렬 */
 	font-size: 16px;    /* 글자 크기 18px */
     line-height: 1.5;
-	margin-bottom: 20px;   
+	margin-bottom: 15px;   
 }
 .left_sub_main_text_label{
     font-size: 18px;
@@ -56,7 +56,7 @@
 .exFinder_right_sub{
 	width: 65%;
 	height: 604px;
-	border: 1px solid rgb(73, 4, 8);
+	
 }
 .right_sub_main{
     width: 100%;
