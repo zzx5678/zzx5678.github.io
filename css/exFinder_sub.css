@@ -1,0 +1,21 @@
+.exFinder_sub_load{
+    display: flex;
+    
+	width: 100%; /* 이미지 너비 설정 */
+	height: 604px;
+	border: 1px solid rgb(167, 6, 41);
+}
+
+.exFinder_left_sub{
+	width: 32%;
+	height: 604px;
+	margin-right: 3%;
+	border: 1px solid rgb(17, 196, 121);
+}
+
+.exFinder_right_sub{
+	width: 65%;
+	height: 604px;
+	border: 1px solid rgb(73, 4, 8);
+	
+}
