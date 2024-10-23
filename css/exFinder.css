@@ -53,7 +53,7 @@ body {
 
 .exFinder_Logo{
 	width: 300px;
-	height: 100px;
+	height: 80px;
 	margin: 0 auto;
 }
 .exFinder_Logo_img{
@@ -70,7 +70,7 @@ body {
 	margin-bottom: 5px;
 }
 .exFinder_Logo_text {
-	font-size: 16px;
+	font-size: 14px;
 	padding: 10px;
 	line-height: 1.6;
 }
@@ -79,7 +79,7 @@ body {
 	font-style: normal;
 }
 .exFinder_Logo_text_i{
-	font-size: 14px;
+	font-size: 13px;
 	
 	color: gray;
 }
@@ -112,7 +112,7 @@ body {
 }
 .exFinder_mini_text2{
 	text-align: left; 
-	font-size: 16px;    /* 글자 크기 18px */
+	font-size: 14px;    /* 글자 크기 18px */
 	margin-bottom: 10px;
 }
 

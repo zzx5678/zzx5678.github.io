@@ -7,7 +7,8 @@ html {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: auto;
+	min-height: 100vh;
+	
 	font-family: Arial, sans-serif;
 }
 .screen{
@@ -69,7 +70,7 @@ html {
 }
 
 .left_arrow{
-	width: 30px;
+	width: 34px;
 	height: 40px;
 	margin-right: 20px;
 
@@ -89,7 +90,7 @@ html {
 }
 
 .right_arrow{
-	width: 30px;
+	width: 34px;
 	height: 40px;
 	margin-left: 20px;
 

@@ -37,7 +37,7 @@
 }
 .left_sub_main_text{
 	text-align: left; /* 텍스트를 중앙 정렬 */
-	font-size: 16px;    /* 글자 크기 18px */
+	font-size: 14px;    /* 글자 크기 18px */
     line-height: 1.5;
 	margin-bottom: 15px;   
 }
