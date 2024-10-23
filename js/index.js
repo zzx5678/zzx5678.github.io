@@ -14,6 +14,7 @@ function loadContent(url) {
             if (url === 'html/exFinder/ex_2.html') {
                 initializeSlide();
             }
+            
             // 'ex_3.html'이 로드되었을 때만 
             if (url === 'html/exFinder/ex_3.html') {
                 exFinder_sub_load('html/exFinder/sub/sub_1.html')
