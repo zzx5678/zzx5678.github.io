@@ -41,3 +41,65 @@
 	padding: 30px;
 	border: 1px solid blue;
 }
+
+.shopping_left_main{
+	width: 32%;
+	height: 604px;
+	margin-right: 3%;
+	border: 1px solid blue;
+}
+
+.shopping_quadrangle{
+	padding: 5px;
+	border: 3px solid transparent; /* 투명 테두리로 공간을 만듦 */
+    border-radius: 20px; /* 모서리를 둥글게 설정 */
+    background: linear-gradient(white, white) padding-box, /* 내부 배경 */
+                linear-gradient(40deg, #8EC5FC 16%, #E0C3FC 82%) border-box; /* 테두리 그라데이션 */
+}
+
+.shopping_mini_title{
+	text-align: center; /* 텍스트를 중앙 정렬 */
+    font-size: 24px;    /* 글자 크기 18px */
+    font-weight: bold;  /* 글자 굵게 */
+
+	margin-bottom: 10px;
+}
+.shopping_mini_text{
+	text-align: center; /* 텍스트를 중앙 정렬 */
+	font-size: 18px;    /* 글자 크기 18px */
+	margin-bottom: 10px;
+}
+.shopping_mini_text_a{
+	text-decoration: none; /* 밑줄 제거 */
+    color: inherit;
+}
+
+.shopping_title {
+    text-align: center; /* 텍스트를 중앙 정렬 */
+    font-size: 24px;    /* 글자 크기 20px */
+    font-weight: bold;  /* 글자 굵게 */
+
+	padding-bottom: 5px;
+	border-bottom: 1px solid gray;
+	margin-bottom: 5px;
+}
+.shopping_text {
+	font-size: 14px;
+	padding: 10px;
+	line-height: 1.6;
+}
+.shopping_text_bold{
+	font-weight: bold;
+	font-style: normal;
+}
+.shopping_text_i{
+	font-size: 13px;
+	
+	color: gray;
+}
+
+.shopping_right_main{
+	width: 65%;
+	height: 604px;
+	border: 1px solid red;
+}
