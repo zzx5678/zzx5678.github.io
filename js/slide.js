@@ -4,6 +4,7 @@ function initializeSlide() {
     const totalImages = 6; // 총 이미지 수
     let slideInterval; // 슬라이드의 인터벌 ID
     let isRunning = true; // 슬라이드 동작 여부 상태
+    console.log(`슬라이드 호출 `); // 콘솔에 인덱스 출력
 
     // 인디케이터 요소를 생성하는 함수
     function createIndicators() {
@@ -56,18 +57,27 @@ function initializeSlide() {
             container.style.transform = `translateX(-${currentIndex * slideWidth}px)`; // 슬라이드 이동
         } else {
             console.error("exFinderRightContainer를 찾을 수 없습니다.");
-            // 오류가 발생하면 초기화
-            currentIndex = 0; // 인덱스를 초기화
-            updateSlide(); // 슬라이드를 업데이트
+            // 오류가 발생하면 멈춤
+            stopSlide()
         }
     }
 
     function startSlide() {
-        if (!isRunning) { // 슬라이드가 실행 중이 아닐 때만 시작
+       if (!isRunning) { // 슬라이드가 실행 중이 아닐 때만 시작
             slideInterval = setInterval(nextSlide, 3000);
             console.log("슬라이드가 시작되었습니다.");
             isRunning = true;
             updateIndicators();
+        } else {
+            // 슬라이드가 실행 중일 때는 초기화
+            console.log("슬라이드가 이미 실행 중입니다. 초기화 중...");
+            
+            // 슬라이드 멈추기
+            stopSlide(); // 슬라이드를 멈춤
+            currentIndex = 0; // 현재 인덱스를 0으로 초기화
+    
+            // 슬라이드를 다시 시작
+            startSlide(); // 슬라이드를 다시 시작
         }
     }
 
@@ -87,13 +97,13 @@ function initializeSlide() {
         }
     }
 
-    startSlide(); // 슬라이드 자동 시작
-
+    
     // 모든 이미지에 클릭 이벤트 설정
     const images = document.querySelectorAll('.exFinder_reason_img_slide');
     images.forEach(img => {
         img.addEventListener('click', toggleSlide); // 클릭 이벤트 추가
     });
 
+    startSlide(); // 슬라이드 자동 시작
     createIndicators(); // 인디케이터 생성 호출
 }
